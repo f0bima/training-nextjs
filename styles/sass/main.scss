@@ -1,0 +1,17 @@
+// @import "base/index.scss";
+
+@import 'utilities/variables';
+@import 'utilities/mixing';
+
+.text{
+    &-primary{
+        color: $color-blue;
+    }
+    &-warning{
+        color: $color-green;
+    }
+    &-danger{
+        color: $color-red;
+    }
+}
+

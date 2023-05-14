@@ -1,0 +1,32 @@
+{
+  "name": "training-next-js",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.14.0",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "cssnano": "^6.0.1",
+    "joi": "^17.7.1",
+    "moment": "^2.29.4",
+    "next": "13.4.1",
+    "next-auth": "^4.22.1",
+    "next-connect": "^0.13.0",
+    "next-joi": "^2.2.1",
+    "postcss": "8.4.23",
+    "postcss-import": "^15.1.0",
+    "postcss-plugin": "^1.0.0",
+    "prisma": "^4.14.0",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.62.1",
+    "tailwindcss": "3.3.2"
+  }
+}

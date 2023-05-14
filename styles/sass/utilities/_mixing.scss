@@ -1,0 +1,38 @@
+$breakPoints: (
+    xs: 320px,
+    sm: 480px,
+    md: 720px,
+    lg: 989px,
+    xl: 1280px,
+);
+
+@mixin break($size) {
+    @media (min-width: map-get($breakPoints, $size)) {
+        @content;
+    }
+}
+
+@mixin grid-col {
+    @each $key, $value in $breakPoints {
+        @for $i from 1 through $item {
+            @if ($key == "sm") {
+                &-#(key) {
+                    width: $value;
+                }
+            } @else {
+                &-#(key)-testing {
+                    width: $value;
+                }
+            }
+        }
+    }
+}
+
+.text {
+    @include break(1440px) {
+        font-size: 25px;
+    }
+    @include break(989px) {
+        font-size: 16px;
+    }
+}
